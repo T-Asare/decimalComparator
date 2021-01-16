@@ -2,13 +2,13 @@ public class decimalComparator {
     public static boolean areEqualByThreeDecimalPlaces(double firstNumber, double secondNumber) {
         int numb1 = (int) (firstNumber * 1000); // Performing type casting from double to integer to ease comparison
         int numb2 = (int) (secondNumber * 1000);
-        if (numb1 == numb2)
-            return true;
+        if (numb1 == numb2) // Performing  comparison of the two numbers
+            return true; // result if comparison shows the two as equal
         else
-            return false;
+            return false; // result if numbers are different
     }
 
-   // public static void main(String[] args) {
+ public static void main(String[] args) {
         decimalComparator DC = new decimalComparator();
         System.out.println(DC.areEqualByThreeDecimalPlaces(-3.1756, -3.175));
         System.out.println(DC.areEqualByThreeDecimalPlaces(3.176, 3.175));
